@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5333380541374515402}
   - component: {fileID: 5803719759754430007}
   - component: {fileID: 7373601358615880875}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Enemy (BigMom)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 5837515213409380639}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -94,7 +94,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 8.85927, y: 1.3528528, z: 9.27299}
+  m_Size: {x: 8.85927, y: 2.374798, z: 9.27299}
   m_Center: {x: 0, y: -0.3, z: -0.72153234}
 --- !u!114 &7373601358615880875
 MonoBehaviour:
@@ -108,9 +108,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bfb154d1915f32479c75b9d71c7153c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoint: 2
-  scoreAmountOfEnemy: 10
-  enemyExplosionVFX: {fileID: 1555613642013565155, guid: 05eb95b49d926c147891debace230759, type: 3}
+  hitPoint: 20
+  scoreAmountOfEnemy: 50
+  enemyExplosionFX: {fileID: 1555613642013565155, guid: 05eb95b49d926c147891debace230759, type: 3}
   hitExplosionVFX: {fileID: 1555613642013565155, guid: 61218031a39b7f847b05a2853c0510c9, type: 3}
-  parent: {fileID: 0}
   timeTillDestroy: 2

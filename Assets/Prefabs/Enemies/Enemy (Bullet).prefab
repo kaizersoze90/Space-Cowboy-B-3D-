@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3753096549854043183}
   - component: {fileID: 7368639510244660542}
   - component: {fileID: 5316474171261280096}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Enemy (Bullet)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,8 +94,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.134593, y: 1.9490366, z: 15.652345}
-  m_Center: {x: 0, y: -1.120724, z: 0}
+  m_Size: {x: 5.134593, y: 3.5857177, z: 15.652345}
+  m_Center: {x: 0, y: -0.83216214, z: 0}
 --- !u!114 &5316474171261280096
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -110,7 +110,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitPoint: 2
   scoreAmountOfEnemy: 10
-  enemyExplosionVFX: {fileID: 1555613642013565155, guid: 05eb95b49d926c147891debace230759, type: 3}
+  enemyExplosionFX: {fileID: 1555613642013565155, guid: 05eb95b49d926c147891debace230759, type: 3}
   hitExplosionVFX: {fileID: 1555613642013565155, guid: 61218031a39b7f847b05a2853c0510c9, type: 3}
-  parent: {fileID: 0}
   timeTillDestroy: 2

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3668073184399370710}
   - component: {fileID: 8762677549194576888}
   - component: {fileID: -3973174672987093427}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Enemy (Thunder)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,8 +94,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.9092684, y: 1.3472195, z: 13.842939}
-  m_Center: {x: 0, y: -0.0000104904175, z: 0}
+  m_Size: {x: 3.9092684, y: 3.0282187, z: 13.842939}
+  m_Center: {x: 0, y: 0.015866935, z: 0}
 --- !u!114 &-3973174672987093427
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -108,9 +108,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bfb154d1915f32479c75b9d71c7153c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoint: 2
-  scoreAmountOfEnemy: 10
-  enemyExplosionVFX: {fileID: 1555613642013565155, guid: 05eb95b49d926c147891debace230759, type: 3}
+  hitPoint: 5
+  scoreAmountOfEnemy: 20
+  enemyExplosionFX: {fileID: 1555613642013565155, guid: 05eb95b49d926c147891debace230759, type: 3}
   hitExplosionVFX: {fileID: 1555613642013565155, guid: 61218031a39b7f847b05a2853c0510c9, type: 3}
-  parent: {fileID: 0}
   timeTillDestroy: 2

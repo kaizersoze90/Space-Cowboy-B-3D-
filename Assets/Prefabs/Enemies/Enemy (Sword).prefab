@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4752763658014506602}
   - component: {fileID: 4994497528135739796}
   - component: {fileID: 3708490203319086132}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Enemy (Sword)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 6.0767965, y: 1.0920242, z: 12.307949}
+  m_Size: {x: 6.0767965, y: 2.335241, z: 12.307949}
   m_Center: {x: 0, y: -0.00001564622, z: 0}
 --- !u!114 &3708490203319086132
 MonoBehaviour:
@@ -110,7 +110,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitPoint: 2
   scoreAmountOfEnemy: 10
-  enemyExplosionVFX: {fileID: 1555613642013565155, guid: 05eb95b49d926c147891debace230759, type: 3}
+  enemyExplosionFX: {fileID: 1555613642013565155, guid: 05eb95b49d926c147891debace230759, type: 3}
   hitExplosionVFX: {fileID: 1555613642013565155, guid: 61218031a39b7f847b05a2853c0510c9, type: 3}
-  parent: {fileID: 0}
   timeTillDestroy: 2

@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerControl : MonoBehaviour
 {
-    [Header("Laser Array")]
+    [Header("Laser Settings")]
     [SerializeField] GameObject[] lasers;
 
     [Header("Control Settings")]
@@ -33,13 +33,14 @@ public class PlayerControl : MonoBehaviour
     Vector2 moveInput;
     Vector2 smoothedMoveInput;
     Vector2 smoothedInputVelocity;
+    AudioSource audioSource;
 
     public bool isAlive = true;
     bool isFiring;
 
     void Start()
     {
-
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -97,10 +98,15 @@ public class PlayerControl : MonoBehaviour
         if (isFiring)
         {
             SetLasersActive(true);
+            if (!audioSource.isPlaying)
+            {
+                audioSource.Play();
+            }
         }
         else
         {
             SetLasersActive(false);
+            audioSource.Stop();
         }
     }
 

@@ -9,16 +9,17 @@ public class Enemy : MonoBehaviour
     [SerializeField] int scoreAmountOfEnemy = 10;
 
     [Header("Explosion Effect Settings")]
-    [SerializeField] GameObject enemyExplosionVFX;
+    [SerializeField] GameObject enemyExplosionFX;
     [SerializeField] GameObject hitExplosionVFX;
-    [SerializeField] Transform parent;
     [SerializeField] float timeTillDestroy = 2f;
 
     ScoreBoard scoreBoard;
+    GameObject parent;
 
     void Awake()
     {
         scoreBoard = FindObjectOfType<ScoreBoard>();
+        parent = GameObject.FindWithTag("SpawnAtRuntime");
     }
 
     void Start()
@@ -43,16 +44,17 @@ public class Enemy : MonoBehaviour
 
     void ProcessHit()
     {
-        scoreBoard.IncreaseScore(scoreAmountOfEnemy);
         hitPoint--;
-
-        GameObject hitVFX = Instantiate(hitExplosionVFX, transform.position, Quaternion.identity, parent);
+        GameObject hitVFX = Instantiate(hitExplosionVFX, transform.position,
+                                        Quaternion.identity, parent.transform);
         Destroy(hitVFX.gameObject, timeTillDestroy);
     }
 
     void KillEnemy()
     {
-        GameObject expVFX = Instantiate(enemyExplosionVFX, transform.position, Quaternion.identity, parent);
+        scoreBoard.IncreaseScore(scoreAmountOfEnemy);
+        GameObject expVFX = Instantiate(enemyExplosionFX, transform.position,
+                                        Quaternion.identity, parent.transform);
         Destroy(expVFX.gameObject, timeTillDestroy);
         Destroy(gameObject);
     }

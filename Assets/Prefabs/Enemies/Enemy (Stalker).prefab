@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 9168207258205071697}
   - component: {fileID: 7208205961327066899}
   - component: {fileID: 8382273842151696279}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Enemy (Stalker)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,11 +95,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bfb154d1915f32479c75b9d71c7153c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoint: 2
+  hitPoint: 5
   scoreAmountOfEnemy: 10
-  enemyExplosionVFX: {fileID: 1555613642013565155, guid: 05eb95b49d926c147891debace230759, type: 3}
+  enemyExplosionFX: {fileID: 1555613642013565155, guid: 05eb95b49d926c147891debace230759, type: 3}
   hitExplosionVFX: {fileID: 1555613642013565155, guid: 61218031a39b7f847b05a2853c0510c9, type: 3}
-  parent: {fileID: 0}
   timeTillDestroy: 2
 --- !u!65 &8382273842151696279
 BoxCollider:
@@ -112,5 +111,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 9.707168, y: 1.1998559, z: 10.850533}
-  m_Center: {x: 0, y: -0.38652807, z: 0.000002861023}
+  m_Size: {x: 9.707168, y: 2.537261, z: 10.850533}
+  m_Center: {x: 0, y: -0.068707764, z: 0.000002861023}
